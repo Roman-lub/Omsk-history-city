@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Омск город историй</title>
+<meta name="description" content="Памятники и скульптуры Омска: фото, факты и истории.">
+<style>
+:root{--bg:#0F1316;--panel:#171D21;--ink:#E8EEEC;--mute:#9FB0AA;--accent:#52C2A6;--bronze:#D8B88A;--line:#27313A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 Georgia,"Times New Roman",serif}
+:focus-visible{outline:3px solid var(--bronze);outline-offset:4px}
+nav{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;gap:1.5rem;padding:1.2rem 6vw;font:1rem system-ui,sans-serif}
+nav a{color:inherit;text-decoration:none;padding-bottom:2px;border-bottom:2px solid transparent}
+nav a[aria-current]{border-color:var(--bronze)}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:flex-end;padding:14vh 6vw 9vh;background:linear-gradient(180deg,rgba(15,19,22,.4),rgba(15,19,22,.95)),url(photos/omsk.jpg) center/cover #1b2226}
+h1{margin:0 0 1.2rem;max-width:12ch;font-size:clamp(2.8rem,10vw,6.5rem);line-height:1.02}
+.lead{margin:0;max-width:34ch;color:var(--bronze);font-size:1.3rem}
+.btn{align-self:flex-start;margin-top:2rem;padding:.8rem 1.4rem;background:var(--accent);color:#06201A;font:600 1rem system-ui,sans-serif;text-decoration:none;border-radius:4px}
+main{max-width:1000px;margin:0 auto;padding:6rem 6vw}
+h2{margin:0 0 1rem;font-size:2rem}
+main p{max-width:62ch}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:2.5rem}
+.cats a{display:block;padding:1.4rem;background:var(--panel);border-left:4px solid var(--accent);color:inherit;text-decoration:none}
+.cats b{display:block;font-size:1.2rem}
+.cats span{color:var(--mute);font-size:.95rem}
+footer{padding:2rem 6vw;border-top:1px solid var(--line);color:var(--mute);font:.95rem system-ui,sans-serif}
+</style>
+</head>
+<body>
+<nav aria-label="Основная"><a href="index.html" aria-current="page">Главная</a><a href="monuments.html">Памятники</a></nav>
+<header class="hero">
+  <h1>Омск город историй</h1>
+  <p class="lead">Памятники и скульптуры, которые помнят людей и события.</p>
+  <a class="btn" href="monuments.html">Смотреть памятники</a>
+</header>
+<main>
+  <h2>О сайте</h2>
+  <p>Омск основан в 1716 году как крепость при слиянии Иртыша и Оми. Сегодня по его улицам можно пройти от ворот этой крепости до памятников писателям, художникам, героям войны и простым рабочим.</p>
+  <p>На сайте десять памятников и скульптур. У каждого есть фото и короткая история, а в каталоге их можно искать, фильтровать по темам и сохранять в избранное.</p>
+  <div class="cats">
+    <a href="monuments.html?cat=city"><b>Городские скульптуры</b><span>Любочка, Степаныч и другие герои центра</span></a>
+    <a href="monuments.html?cat=war"><b>Память о войне</b><span>Мемориал Победы и монумент труженикам тыла</span></a>
+    <a href="monuments.html?cat=history"><b>История и люди</b><span>Достоевский, Врубель, Валиханов, Тарские ворота</span></a>
+  </div>
+</main>
+<footer>Проект по информатике. Сайт создан с помощью ИИ-ассистента Claude.</footer>
+</body>
+</html>
